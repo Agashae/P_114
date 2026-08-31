@@ -7,8 +7,21 @@
 35 min - Menu principal
 10 min - Saisie utilisateur
 
+(2h50)
+
 31.8.26
 -----------------------------------
-20 min - Aide/correction du diagramme de flux
-35 min - Comprendre logique Morse
+10 min - Aide/correction du diagramme de flux
+15 min - Comprendre logique Morse
 15 min - Création d'un tableau avec la valeur de l'utilisateur
+25 min - Recherche d'un tableau Morse à ajouter en C#
+10 min - Correction Suivi d'évaluation d'aujourd'hui
+20 min - Conversion mot/texte depuis un tableau Morse
+10 min - Ajout chiffres 0–9
+10 min - Ajout Séparateur de mots en /
+10 min - Ajouter fonctionnalité recommencer
+10 min - Afficher résultat
+
+(2h15)
+
+couleur/table Morse pour user

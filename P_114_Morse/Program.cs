@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Security.Policy;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace P_114_Morse
 {
@@ -42,7 +46,7 @@ namespace P_114_Morse
                 foreach (char check in UserValue)
                 {
                     //prend que les lettres non accentues a-z / A-Z
-                    if (!((check >= 'a' && check <= 'z') || (check >= 'A' && check <= 'Z')))
+                    if (!((check >= 'a' && check <= 'z') || (check >= 'A' && check <= 'Z') || (check >= 0 && check >= 9)))
                     {
                         valide = false;
                         // ça casse et part vers le message en valide = false
@@ -57,8 +61,6 @@ namespace P_114_Morse
                     //https://learn.microsoft.com/en-us/dotnet/api/system.threading.thread.sleep?view=net-10.0
                     // timer de 1 seconde pour ensuite partir dans Main
                     Thread.Sleep(1000);
-
-
                 }
 
             } while (!valide);// tant que c'est différent de !valide
@@ -66,6 +68,7 @@ namespace P_114_Morse
 
             // tableau 2 dimensions
             // https://enseignement.section-inf.ch/moduleICT/319/Tableaux/Introduction/
+            // https://fr.wikipedia.org/wiki/Code_Morse_international
             string[,] morseTableau = new string[,] {
             { "A", ".-" }, { "B", "-..." }, { "C", "-.-." }, { "D", "-.." },
             { "E", "." }, { "F", "..-." }, { "G", "--." }, { "H", "...." },
@@ -81,20 +84,35 @@ namespace P_114_Morse
 
 
             //UserValue c'est un string et c'est aussi un tableau
-            foreach (int g in UserValue)
+            foreach (char a in UserValue)
             {
-
+                //GetLength() pour connaître la taille du morseTableau
+                //c'est genre la dimension 0
+                for (int i = 0; i < morseTableau.GetLength(0); i++)
+                {
+                    // ToUpper transforme tout en majuscule
+                    if (char.ToUpper(a) == morseTableau[i, 0][0])
+                    {
+                        Console.Write(morseTableau[i, 1] + " ");
+                        break;
+                    }
+                }
             }
 
+            Console.Write("\n\nVoulez-vous refaire? (O ou une autre touche pour non) :");
+            ConsoleKey restart = Console.ReadKey().Key;
 
-            int tailleTableau = UserValue.Length;
-
-            //tableau de taille uservalue
-            string[] messages = new string[tailleTableau];
-
-            Console.WriteLine(messages);
-
-
+            // P_Prog 319
+            if (restart == ConsoleKey.O)
+            {
+                Console.Clear();
+                Title();
+                Value();
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
         }
 
     }
