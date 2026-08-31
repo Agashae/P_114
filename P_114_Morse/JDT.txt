@@ -1,0 +1,14 @@
+24.8.26 (Absent, fait à la maison)
+-----------------------------------
+50 min - Découverte du Morse
+50 min - Modélisation de l'algorithme draw.io
+10 min - Squelette du projet (using System;)
+15 min - Écran d'accueil
+35 min - Menu principal
+10 min - Saisie utilisateur
+
+31.8.26
+-----------------------------------
+20 min - Aide/correction du diagramme de flux
+35 min - Comprendre logique Morse
+15 min - Création d'un tableau avec la valeur de l'utilisateur

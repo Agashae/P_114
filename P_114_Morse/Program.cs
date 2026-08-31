@@ -13,7 +13,7 @@ namespace P_114_Morse
         {
 
             Title();
-            UserValue();
+            Value();
 
             // pour enlever message console
             Console.ReadLine();
@@ -28,7 +28,7 @@ namespace P_114_Morse
             Console.WriteLine("╚═══════════════════════════════════════════════════════════╝\n");
         }
 
-        static void UserValue()
+        static void Value()
         {
             string UserValue;
             bool valide;
@@ -38,7 +38,7 @@ namespace P_114_Morse
                 UserValue = Console.ReadLine();
                 valide = true;
 
-                  //pour lire comme un tableau cahque index
+                //pour lire comme un tableau cahque index
                 foreach (char check in UserValue)
                 {
                     //prend que les lettres non accentues a-z / A-Z
@@ -54,16 +54,48 @@ namespace P_114_Morse
                 {
                     Console.WriteLine("pas possible car il ya un chiffre, accent, ponctuation ou espace...");
 
-               //https://learn.microsoft.com/en-us/dotnet/api/system.threading.thread.sleep?view=net-10.0
-                    // timer de 3 secondes pour ensuite partir dans Main
-                    Thread.Sleep(3000);
-                    
+                    //https://learn.microsoft.com/en-us/dotnet/api/system.threading.thread.sleep?view=net-10.0
+                    // timer de 1 seconde pour ensuite partir dans Main
+                    Thread.Sleep(1000);
+
 
                 }
 
             } while (!valide);// tant que c'est différent de !valide
 
-            Console.WriteLine(UserValue);
+
+            // tableau 2 dimensions
+            // https://enseignement.section-inf.ch/moduleICT/319/Tableaux/Introduction/
+            string[,] morseTableau = new string[,] 
+            {
+    { "A", ".-" }, { "B", "-..." }, { "C", "-.-." }, { "D", "-.." },
+    { "E", "." }, { "F", "..-." }, { "G", "--." }, { "H", "...." },
+    { "I", ".." }, { "J", ".---" }, { "K", "-.-" }, { "L", ".-.." },
+    { "M", "--" }, { "N", "-." }, { "O", "---" }, { "P", ".--." },
+    { "Q", "--.-" }, { "R", ".-." }, { "S", "..." }, { "T", "-" },
+    { "U", "..-" }, { "V", "...-" }, { "W", ".--" }, { "X", "-..-" },
+    { "Y", "-.--" }, { "Z", "--.." }, { " ", "/" },
+    { "0", "-----" }, { "1", ".----" }, { "2", "..---" }, { "3", "...--" },
+    { "4", "....-" }, { "5", "....." }, { "6", "-...." }, { "7", "--..." },
+    { "8", "---.." }, { "9", "----." }
+            };
+
+
+            //UserValue c'est un string et c'est aussi un tableau
+            foreach (int g in UserValue)
+            {
+
+            }
+
+
+            int tailleTableau = UserValue.Length;
+
+            //tableau de taille uservalue
+            string[] messages = new string[tailleTableau];
+
+            Console.WriteLine(messages);
+
+
         }
 
     }
