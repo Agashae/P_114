@@ -38,7 +38,7 @@ namespace P_114_Morse
             bool valide;
             do
             {
-                Console.WriteLine("Taper votre message: ");
+                Console.WriteLine("Taper votre message (sans accents): ");
                 UserValue = Console.ReadLine();
                 valide = true;
 
@@ -46,11 +46,12 @@ namespace P_114_Morse
                 foreach (char check in UserValue)
                 {
                     //prend que les lettres non accentues a-z / A-Z
-                    if (!((check >= 'a' && check <= 'z') || (check >= 'A' && check <= 'Z') || (check >= 0 && check >= 9)))
+                    if (!((check >= 'a' && check <= 'z') ||
+                          (check >= 'A' && check <= 'Z') ||
+                          (check >= '0' && check <= '9')))
                     {
-                        valide = false;
+                        valide = false; 
                         // ça casse et part vers le message en valide = false
-                        break;
                     }
                 }
 
@@ -82,6 +83,7 @@ namespace P_114_Morse
             { "8", "---.." }, { "9", "----." }
             };
 
+            Console.ForegroundColor = ConsoleColor.Red;
 
             //UserValue c'est un string et c'est aussi un tableau
             foreach (char a in UserValue)
@@ -98,6 +100,7 @@ namespace P_114_Morse
                     }
                 }
             }
+            Console.ResetColor();
 
             Console.Write("\n\nVoulez-vous refaire? (O ou une autre touche pour non) :");
             ConsoleKey restart = Console.ReadKey().Key;
@@ -113,6 +116,11 @@ namespace P_114_Morse
             {
                 Environment.Exit(0);
             }
+        }
+
+        static void Rules()
+        {
+
         }
 
     }

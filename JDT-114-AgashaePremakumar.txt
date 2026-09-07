@@ -24,4 +24,15 @@
 
 (2h15)
 
+-----------------------------------
+ajout couleur réponse utilisateur pour que ça soit + lisible
+régler problème sur les accents qui se prenaient
+
+
 couleur/table Morse pour user
+
+voir erreur si on tape que espace
+
+(2h15)
+
+
