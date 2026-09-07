@@ -24,14 +24,17 @@
 
 (2h15)
 
+7.9.26
 -----------------------------------
 10 min - Ajout couleur réponse utilisateur pour que ça soit + lisible
 10 min - Régler problème sur les accents qui se prenaient
 10 min - Régler problème sur les espaces
 45 min - Créer une partie règles pour que les users comprennent
+30 min - Faire bipper le code
+30 min - Décodage inverse
 
-couleur/table Morse pour user
-
+export fichier a faire
+rendre l'interface + belle car c'était pas User Friendly
 
 (2h15)
 
