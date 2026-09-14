@@ -192,7 +192,7 @@ namespace P_114_Morse
 
             Console.ResetColor();
 
-            Console.Write("\n\nVoulez-vous refaire? (O pour recommencer, A pour décoder, E pour exporter votre morse, et une autre touche pour non) :");
+            Console.WriteLine("\n\nVoulez-vous refaire? (O pour recommencer, A pour décoder, E pour exporter votre morse, et une autre touche pour non) :");
             ConsoleKey restart = Console.ReadKey().Key;
 
             // P_Prog 319
@@ -210,12 +210,11 @@ namespace P_114_Morse
             }
             else if (restart == ConsoleKey.E)
             {
-                Console.Clear();
-
                 //https://ironsoftware.com/fr/academy/learn-csharp/csharp-read-write-file/
                 string chemin = "../export.txt";
                 File.WriteAllText(chemin, contenu);
-                Console.WriteLine("Fichier créé avec succès dans P_114_Morse\\bin!");
+                Console.WriteLine("\nVotre fichier est sous P_114_Morse\\bin!");
+
             }
             else
             {
@@ -231,48 +230,49 @@ namespace P_114_Morse
             Console.WriteLine("Ici, il y a les règles !\n");
             Console.ResetColor();
 
-            Console.WriteLine("Voici la table de conversion : ");
-            Console.WriteLine("A = .- B = -... C = -.-. D = -.. E = . F = ..-.G = --. H = ....");
-            Console.WriteLine("I = .. J = .--- K = -.- L = .-.. M = -- N = -. O = --- P = .--. Q = --.- R = .-. S = ... T = - U = ..- V = ...-");
-            Console.WriteLine("W = .-- X = -..- Y = -.-- Z = --.. ESPACE = /");
-            Console.WriteLine("0 = ----- 1 = .---- 2 = ..--- 3 = ...-- 4 = ....- 5 = ..... 6 = -.... 7 = --... 8 = ---.. 9 = ----.\n\n");
+            Console.WriteLine("| Voici la table de conversion : ");
+            Console.WriteLine("| A = .- B = -... C = -.-. D = -.. E = . F = ..-.G = --. H = ....");
+            Console.WriteLine("| I = .. J = .--- K = -.- L = .-.. M = -- N = -. O = --- P = .--. Q = --.- R = .-. S = ... T = - U = ..- V = ...-");
+            Console.WriteLine("| W = .-- X = -..- Y = -.-- Z = --.. ESPACE = /");
+            Console.WriteLine("| 0 = ----- 1 = .---- 2 = ..--- 3 = ...-- 4 = ....- 5 = ..... 6 = -.... 7 = --... 8 = ---.. 9 = ----.\n\n");
 
             Console.ForegroundColor = ConsoleColor.Blue;
+
+
             Console.WriteLine("Voici un exemple qui marche");
             Console.ResetColor();
 
             // @ pour tout prendre en un contenu
-            Console.WriteLine(@"╔═════════════ Agashae Premakumar ══════════════════════════╗
-║                                                           ║
-║    Bienvenue dans le jeu : 114 Codification Chiffrement   ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-Taper votre message (sans accents) :
-Agashae");
+            Console.WriteLine(@"| ╔═════════════ Agashae Premakumar ══════════════════════════╗
+| ║                                                           ║
+| ║    Bienvenue dans le jeu : 114 Codification Chiffrement   ║
+| ║                                                           ║
+| ╚═══════════════════════════════════════════════════════════╝
+| Taper votre message (sans accents) :
+| Agashae");
 
+            Console.Write("| ");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(".- --. .- ... .... .- .");
             Console.ResetColor();
-
-            Console.WriteLine("Voulez-vous refaire ? (O ou une autre touche pour non) :\n");
+            Console.WriteLine("| Voulez-vous refaire ? (O ou une autre touche pour non) :\n");
 
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("\nVoici un exemple qui ne marche pas");
             Console.ResetColor();
-
-            Console.WriteLine(@"╔═════════════ Agashae Premakumar ══════════════════════════╗
-║                                                           ║
-║    Bienvenue dans le jeu : 114 Codification Chiffrement   ║
-║                                                           ║
-╚═══════════════════════════════════════════════════════════╝
-Taper votre message (sans accents) :
-é");
-
+            Console.WriteLine(@"| ╔═════════════ Agashae Premakumar ══════════════════════════╗
+| ║                                                           ║
+| ║    Bienvenue dans le jeu : 114 Codification Chiffrement   ║
+| ║                                                           ║
+| ╚═══════════════════════════════════════════════════════════╝
+| Taper votre message (sans accents) :
+| é");
+            Console.Write("| ");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Pas possible car il y a un chiffre, un accent ou une ponctuation.");
             Console.ResetColor();
 
-            Console.WriteLine("Voulez-vous refaire ? (O ou une autre touche pour non) :\n\n");
+            Console.WriteLine("| Voulez-vous refaire ? (O ou une autre touche pour non) :\n\n");
 
 
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -280,6 +280,8 @@ Taper votre message (sans accents) :
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Escape\n");
             Console.ResetColor();
+
+
 
             ConsoleKey readyPlay;
             bool isTrue = true;
@@ -356,7 +358,7 @@ Taper votre message (sans accents) :
 
             foreach (string codeMorse in lettresMorse)
             {
-               
+
                 // Si / alors affiche un espace entre les mots
                 if (codeMorse == "/")
                 {
@@ -376,12 +378,12 @@ Taper votre message (sans accents) :
 
                         break;
                     }
-                } 
+                }
             }
 
             Console.ResetColor();
 
-            Console.Write("\n\nVoulez-vous refaire? (O pour oui, M pour avoir un message en morse, E pour exporter votre conversion et une autre touche pour non) : ");
+            Console.WriteLine("\n\nVoulez-vous refaire? (O pour oui, M pour avoir un message en morse, E pour exporter votre conversion et une autre touche pour non) : ");
             ConsoleKey restart = Console.ReadKey().Key;
 
             if (restart == ConsoleKey.O)
@@ -398,12 +400,11 @@ Taper votre message (sans accents) :
             }
             else if (restart == ConsoleKey.E)
             {
-                Console.Clear();
 
                 //https://ironsoftware.com/fr/academy/learn-csharp/csharp-read-write-file/
                 string chemin = "../export.txt";
                 File.WriteAllText(chemin, contenu);
-                Console.WriteLine("Fichier créé avec succès dans P_114_Morse\\bin!");
+                Console.WriteLine("\nVotre fichier est sous P_114_Morse\\bin!");
             }
             else
             {
@@ -413,4 +414,3 @@ Taper votre message (sans accents) :
 
     }
 }
-
