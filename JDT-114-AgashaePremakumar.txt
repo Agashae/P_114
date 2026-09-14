@@ -33,7 +33,12 @@
 30 min - Faire bipper le code
 30 min - Décodage inverse
 
-export fichier a faire
+(2h15)
+
+14.9.26
+-----------------------------------
+45 min - Ajouter la fonction export du fichier
+
 rendre l'interface + belle car c'était pas User Friendly
 
 (2h15)

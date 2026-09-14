@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
+using System.IO;
 using System.Linq;
 using System.Net;
+using System.Runtime.Remoting.Contexts;
 using System.Security.Policy;
 using System.Text;
 using System.Threading;
@@ -128,6 +130,9 @@ namespace P_114_Morse
 
             Console.ForegroundColor = ConsoleColor.Green;
 
+            //pour avoir la valeur UserValue en morse
+            string contenu = "";
+
             //UserValue c'est un string et c'est aussi un tableau
             foreach (char a in UserValue)
             {
@@ -142,12 +147,15 @@ namespace P_114_Morse
                         string codeMorse = morseTableau[i, 1];
 
                         Console.Write(codeMorse + " ");
+                        //stocker à chaque fois le nouveau caractère
+                        contenu += codeMorse + " ";
 
                         //si c'est un espace entre les mots
                         if (codeMorse == "/")
                         {
                             //pause de 1000 millisecondes entre les mots
                             Thread.Sleep(1000);
+
                         }
                         else
                         {
@@ -184,7 +192,7 @@ namespace P_114_Morse
 
             Console.ResetColor();
 
-            Console.Write("\n\nVoulez-vous refaire? (O pour recommencer, A pour décoder et une autre touche pour non) :");
+            Console.Write("\n\nVoulez-vous refaire? (O pour recommencer, A pour décoder, E pour exporter votre morse, et une autre touche pour non) :");
             ConsoleKey restart = Console.ReadKey().Key;
 
             // P_Prog 319
@@ -199,6 +207,15 @@ namespace P_114_Morse
                 Console.Clear();
                 Title();
                 ConvertToAlphabet();
+            }
+            else if (restart == ConsoleKey.E)
+            {
+                Console.Clear();
+
+                //https://ironsoftware.com/fr/academy/learn-csharp/csharp-read-write-file/
+                string chemin = "../export.txt";
+                File.WriteAllText(chemin, contenu);
+                Console.WriteLine("Fichier créé avec succès dans P_114_Morse\\bin!");
             }
             else
             {
@@ -332,12 +349,14 @@ Taper votre message (sans accents) :
 
 
             Console.ForegroundColor = ConsoleColor.Green;
+            string contenu = "";
 
             // sépare le message en lettres grâce aux espaces
             string[] lettresMorse = UserValue.Split(' ');
 
             foreach (string codeMorse in lettresMorse)
             {
+               
                 // Si / alors affiche un espace entre les mots
                 if (codeMorse == "/")
                 {
@@ -349,15 +368,20 @@ Taper votre message (sans accents) :
                 {
                     if (codeMorse == morseTableau[i, 1])
                     {
+
                         Console.Write(morseTableau[i, 0]);
+
+                        //il faut prendre dans le tableau pour exporter
+                        contenu += morseTableau[i, 0];
+
                         break;
                     }
-                }
+                } 
             }
 
             Console.ResetColor();
 
-            Console.Write("\n\nVoulez-vous refaire? (O pour oui, M pour avoir un message en morse, et une autre touche pour non) : ");
+            Console.Write("\n\nVoulez-vous refaire? (O pour oui, M pour avoir un message en morse, E pour exporter votre conversion et une autre touche pour non) : ");
             ConsoleKey restart = Console.ReadKey().Key;
 
             if (restart == ConsoleKey.O)
@@ -371,6 +395,15 @@ Taper votre message (sans accents) :
                 Console.Clear();
                 Title();
                 ConvertToMorse();
+            }
+            else if (restart == ConsoleKey.E)
+            {
+                Console.Clear();
+
+                //https://ironsoftware.com/fr/academy/learn-csharp/csharp-read-write-file/
+                string chemin = "../export.txt";
+                File.WriteAllText(chemin, contenu);
+                Console.WriteLine("Fichier créé avec succès dans P_114_Morse\\bin!");
             }
             else
             {
