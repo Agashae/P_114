@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="MuuzQRY7OUiKRl4kDqsE">
+    <mxGraphModel dx="1406" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-3" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7nJHE3C4VXCfXcRXTYHL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;" value="Début du programme" vertex="1">
+          <mxGeometry height="80" width="80" x="430" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-19" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7nJHE3C4VXCfXcRXTYHL-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="L&#39;utilisateur  choisit le type de conversion à effectuer&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-25" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7nJHE3C4VXCfXcRXTYHL-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-26" connectable="0" parent="7nJHE3C4VXCfXcRXTYHL-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NON" vertex="1">
+          <mxGeometry relative="1" x="0.0635" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-30" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7nJHE3C4VXCfXcRXTYHL-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-31" connectable="0" parent="7nJHE3C4VXCfXcRXTYHL-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="OUI" vertex="1">
+          <mxGeometry relative="1" x="-0.2966" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-16" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="est-ce que son choix est valide?" vertex="1">
+          <mxGeometry height="100" width="100" x="420" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-27" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="7nJHE3C4VXCfXcRXTYHL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-23" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="signalé clairement, sans&lt;br/&gt;faire planter le programme" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-34" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7nJHE3C4VXCfXcRXTYHL-32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="L&#39;utilisateur entre un nombre à convertir" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-43" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7nJHE3C4VXCfXcRXTYHL-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-32" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="est-ce que sa valeur est valide?" vertex="1">
+          <mxGeometry height="100" width="100" x="420" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-41" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7nJHE3C4VXCfXcRXTYHL-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-37" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="signalé clairement, sans&lt;br/&gt;faire planter le programme" vertex="1">
+          <mxGeometry height="60" width="120" x="230" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-39" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.557;entryY=0.982;entryDx=0;entryDy=0;entryPerimeter=0;" target="7nJHE3C4VXCfXcRXTYHL-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-40" connectable="0" parent="7nJHE3C4VXCfXcRXTYHL-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NON" vertex="1">
+          <mxGeometry relative="1" x="-0.5153" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-46" edge="1" parent="1" source="7nJHE3C4VXCfXcRXTYHL-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="7nJHE3C4VXCfXcRXTYHL-45" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-42" parent="1" style="whiteSpace=wrap;html=1;" value="Effectue la conversion selon l&#39;option choisie" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="7nJHE3C4VXCfXcRXTYHL-45" parent="1" style="whiteSpace=wrap;html=1;" value="Affiche le résultat&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="750" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

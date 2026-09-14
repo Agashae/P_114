@@ -37,9 +37,10 @@
 
 14.9.26
 -----------------------------------
-45 min - Ajouter la fonction export du fichier
-
-rendre l'interface + belle car c'était pas User Friendly
+45 min - Ajouter la fonction export du fichier en morse/décodage
+45 min - Améliorer l'UI de mon code car c'était pas User Friendly
+20 min - Création du draw.io Conversion de bases
+25 min - Création des tâches du projet
 
 (2h15)
 
