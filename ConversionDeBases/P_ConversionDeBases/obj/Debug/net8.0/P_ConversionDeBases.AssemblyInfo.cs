@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P_ConversionDeBases")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e42620453e56371d6bd010941ae731fe7696e9ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9deaaa0c89911b4d8b441b566f19c4dcaf505ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("P_ConversionDeBases")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P_ConversionDeBases")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -47,13 +47,13 @@
 28.9.26
 -----------------------------------
 15 min - Planification des tâches du projet dans PM2ETML en prenant compte du temps restant + vacances (Terminé)
-15 min - Lecture du CDC 2 (Terminé)
-25 min - draw.io Conversion de bases (Terminé)
-25 min - Création du menu et des menus de conversions (Terminé)
-20 min - Gestion d'un choix valide et signalé clairement les erreurs (Terminé)
+10 min - Lecture du CDC 2 (Terminé)
+20 min - draw.io Conversion de bases (Terminé)
+20 min - Création du menu et des menus de conversions (Terminé)
+10 min - Gestion d'un choix valide et signalé clairement les erreurs (Terminé)
 15 min - Chercher comment faire des méthodes avec paramètres (sans retour) (Terminé)
 10 min - Nombre à convertir (Terminé)
-10 min - Fonction conversion décimal → binaire (en cours)
+35 min - Fonction conversion décimal → binaire (en cours)
 
 (2h15)
 

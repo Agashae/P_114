@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 
 namespace P_ConversionDeBases
 {
@@ -60,11 +61,52 @@ namespace P_ConversionDeBases
         //https://enseignement.section-inf.ch/moduleICT/319/Methodes/AP_SR/
         static void TitleChoices(int ChoiceConversion)
         {
-            Console.WriteLine("C'est "+ChoiceConversion);
 
             if (ChoiceConversion == 1)
             {
-             
+                int userDeci = -1; // pour que le while le voit
+                bool valide = false;
+
+                do
+                {
+                    Console.Write("Entrez un nombre décimal (positif) : ");
+                    try
+                    {
+                        userDeci = int.Parse(Console.ReadLine());
+
+                        if (userDeci >= 0)
+                        {
+                            valide = true;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Le nombre doit être positif");
+                        }
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Ce n'est pas un nombre valide");
+                    }
+                }
+                while (valide == false);// tant que c'est pas bon
+
+                // successives  2
+                int copie = userDeci;
+                string binaire = "";
+
+                if (copie == 0)
+                {
+                    binaire = "0";
+                }
+
+            //https://stackoverflow.com/questions/2386325/c-sharp-divide-two-binary-numbers
+                while (copie > 0)
+                {
+                    binaire = (copie % 2) + binaire;
+                    copie = copie / 2;
+                }
+
+                Console.WriteLine(userDeci + " en binaire = " + binaire);
             }
             else if (ChoiceConversion == 2) { }
             else if (ChoiceConversion == 3) { }
@@ -72,12 +114,6 @@ namespace P_ConversionDeBases
 
                 string UserValue = Console.ReadLine();
             Console.WriteLine(UserValue);
-
-
-
-
-
-
 
         }
     }
