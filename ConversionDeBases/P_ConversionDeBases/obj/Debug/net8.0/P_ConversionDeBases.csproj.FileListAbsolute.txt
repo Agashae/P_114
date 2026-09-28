@@ -1,0 +1,15 @@
+D:\114\ConversionDeBases\P_ConversionDeBases\bin\Debug\net8.0\P_ConversionDeBases.exe
+D:\114\ConversionDeBases\P_ConversionDeBases\bin\Debug\net8.0\P_ConversionDeBases.deps.json
+D:\114\ConversionDeBases\P_ConversionDeBases\bin\Debug\net8.0\P_ConversionDeBases.runtimeconfig.json
+D:\114\ConversionDeBases\P_ConversionDeBases\bin\Debug\net8.0\P_ConversionDeBases.dll
+D:\114\ConversionDeBases\P_ConversionDeBases\bin\Debug\net8.0\P_ConversionDeBases.pdb
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.GeneratedMSBuildEditorConfig.editorconfig
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.AssemblyInfoInputs.cache
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.AssemblyInfo.cs
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.csproj.CoreCompileInputs.cache
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.sourcelink.json
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.dll
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\refint\P_ConversionDeBases.dll
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.pdb
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\P_ConversionDeBases.genruntimeconfig.cache
+D:\114\ConversionDeBases\P_ConversionDeBases\obj\Debug\net8.0\ref\P_ConversionDeBases.dll

@@ -61,6 +61,7 @@ namespace P_114_Morse
 
         static void Title()
         {
+            Console.WriteLine("Mettez en pleine écran pour une meilleure expérience");
             Console.WriteLine("╔═════════════ Agashae Premakumar ══════════════════════════╗");
             Console.WriteLine("║                                                           ║");
             Console.WriteLine("║    Bienvenue dans le jeu : 114 Codification Chiffrement   ║");
@@ -131,7 +132,7 @@ namespace P_114_Morse
             Console.ForegroundColor = ConsoleColor.Green;
 
             //pour avoir la valeur UserValue en morse
-            string contenu = "";
+            StringBuilder contenu = new StringBuilder();
 
             //UserValue c'est un string et c'est aussi un tableau
             foreach (char a in UserValue)
@@ -146,9 +147,9 @@ namespace P_114_Morse
                         //récupère le code morse correspondant à la lettre
                         string codeMorse = morseTableau[i, 1];
 
-                        Console.Write(codeMorse + " ");
+                        Console.Write($"{codeMorse} ");
                         //stocker à chaque fois le nouveau caractère
-                        contenu += codeMorse + " ";
+                        contenu.Append($"{codeMorse} ");
 
                         //si c'est un espace entre les mots
                         if (codeMorse == "/")
@@ -212,7 +213,7 @@ namespace P_114_Morse
             {
                 //https://ironsoftware.com/fr/academy/learn-csharp/csharp-read-write-file/
                 string chemin = "../export.txt";
-                File.WriteAllText(chemin, contenu);
+                File.WriteAllText(chemin, contenu.ToString());
                 Console.WriteLine("\nVotre fichier est sous P_114_Morse\\bin!");
 
             }
