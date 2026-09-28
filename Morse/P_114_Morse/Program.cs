@@ -284,6 +284,13 @@ namespace P_114_Morse
 
 
 
+
+
+
+
+
+
+
             ConsoleKey readyPlay;
             bool isTrue = true;
 
